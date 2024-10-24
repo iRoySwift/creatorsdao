@@ -45,6 +45,11 @@
 			path = creatorsdaoUITests;
 			sourceTree = "<group>";
 		};
+		B0B328052CCA9DCF008B1CC8 /* learning01 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = learning01;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		B0B327CE2CCA9D90008B1CC8 = {
 			isa = PBXGroup;
 			children = (
+				B0B328052CCA9DCF008B1CC8 /* learning01 */,
 				B0B327D92CCA9D90008B1CC8 /* creatorsdao */,
 				B0B327EB2CCA9D92008B1CC8 /* creatorsdaoTests */,
 				B0B327F52CCA9D92008B1CC8 /* creatorsdaoUITests */,
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				B0B327D92CCA9D90008B1CC8 /* creatorsdao */,
+				B0B328052CCA9DCF008B1CC8 /* learning01 */,
 			);
 			name = creatorsdao;
 			packageProductDependencies = (
