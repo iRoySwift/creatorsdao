@@ -150,7 +150,6 @@ struct BaseStackView: View {
                 .frame(maxWidth: .infinity)
                 
             }
-            .background(.red)
             // .frame(maxWidth: geometry.size.width)
             // .edgesIgnoringSafeArea(.horizontal)
         }
