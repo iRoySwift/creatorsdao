@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct TodoView: View {
-//    @State private var text: String = ""
-//    @State private var todos:[String] = []
-    
     @StateObject private var viewModel = TodoViewModel()
+    // MARK: - 4. 获取ModelContext
+    @Environment(\.modelContext) private var context
+    
+    @Query var todos: [Todo] // 使用@Query监听数据变化
     
     var body: some View {
         VStack{
@@ -19,27 +21,29 @@ struct TodoView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle.roundedBorder)
             
             Button(action: {
-                viewModel.addTodo()
+                viewModel.addTodo(context: context)
             }) {
                 Text("add todo")
             }
             
             List {
-                ForEach(viewModel.todos, id: \.self.id) { todo in
+                ForEach(todos, id: \.self.id) { todo in
                     Text(todo.title)
                 }
-                .onDelete(perform: viewModel.deleteTodo)
+                .onDelete { indexSet in
+                    for index in indexSet {
+                        viewModel.deleteTodo(todo: todos[index], context: context)
+                    }
+                    
+                }
             }
             
             
         }
     }
-    
-//    private func deleteTodo(atOffsets: IndexSet) {
-//        todos.remove(atOffsets: atOffsets)
-//    }
 }
 
 #Preview {
     TodoView()
+        .modelContainer(for: Todo.self)// 为预览提供modelcontext
 }
