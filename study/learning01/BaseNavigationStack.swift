@@ -16,8 +16,13 @@ struct BaseNavigationStack: View {
                         BaseImageUIView()
                     } label: {
                         Image(systemName: "house")
-                        Text("Home")
-        
+                        Text("Image")
+                        
+                    }
+                    
+                    NavigationLink(destination: BaseTextUIView()) {
+                        Image(systemName: "house")
+                        Text("Text")
                     }
                     
                     HStack{
