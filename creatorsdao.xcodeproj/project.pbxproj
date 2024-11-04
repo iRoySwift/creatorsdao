@@ -40,6 +40,16 @@
 			path = Sensors;
 			sourceTree = "<group>";
 		};
+		B0199FF12CD7665E003EF6B1 /* FoodPicker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FoodPicker;
+			sourceTree = "<group>";
+		};
+		B06FA5B22CD3C19000726386 /* AiChat */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AiChat;
+			sourceTree = "<group>";
+		};
 		B079AE6C2CD06914005A3EA1 /* todo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = todo;
@@ -90,6 +100,8 @@
 		B017F7982CCFDBB300070464 /* study */ = {
 			isa = PBXGroup;
 			children = (
+				B0199FF12CD7665E003EF6B1 /* FoodPicker */,
+				B06FA5B22CD3C19000726386 /* AiChat */,
 				B079AE6C2CD06914005A3EA1 /* todo */,
 				B017F7902CCFDBA200070464 /* learning01 */,
 				B017F7972CCFDBA700070464 /* Sensors */,
@@ -136,6 +148,8 @@
 			fileSystemSynchronizedGroups = (
 				B017F7902CCFDBA200070464 /* learning01 */,
 				B017F7972CCFDBA700070464 /* Sensors */,
+				B0199FF12CD7665E003EF6B1 /* FoodPicker */,
+				B06FA5B22CD3C19000726386 /* AiChat */,
 				B079AE6C2CD06914005A3EA1 /* todo */,
 				B0B327D92CCA9D90008B1CC8 /* creatorsdao */,
 			);
@@ -433,8 +447,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -472,8 +485,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
